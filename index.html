@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunaire - Loja de Cosméticos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Lunaire</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="banner">
+        <div class="banner-content">
+            <h2>Bem-vindo à Lunaire</h2>
+            <p>Explore nossa linha exclusiva de cosméticos inspirados na beleza lunar.</p>
+            <button onclick="scrollToSection('products')">Veja os Produtos</button>
+        </div>
+    </section>
+
+    <section id="products" class="products-section">
+        <h2>Nossos Produtos</h2>
+        <div class="product-grid">
+            <!-- Produto 1 -->
+            <div class="product-item">
+                <img src="product1.jpg" alt="Batom Lunaire">
+                <h3>Batom Lunaire</h3>
+                <p class="price">R$29,90</p>
+                <p class="description">Batom de longa duração com acabamento suave e hidratante.</p>
+                <p class="rating">⭐⭐⭐⭐☆</p>
+                <button onclick="addToCart('Batom Lunaire')">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Produto 2 -->
+            <div class="product-item">
+                <img src="product2.jpg" alt="Base Facial Lunaire">
+                <h3>Base Facial Lunaire</h3>
+                <p class="price">R$59,90</p>
+                <p class="description">Base de alta cobertura que proporciona um acabamento impecável.</p>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <button onclick="addToCart('Base Facial Lunaire')">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Produto 3 -->
+            <div class="product-item">
+                <img src="product3.jpg" alt="Creme Hidratante Lunaire">
+                <h3>Creme Hidratante Lunaire</h3>
+                <p class="price">R$39,90</p>
+                <p class="description">Hidratação profunda que deixa a pele macia e radiante.</p>
+                <p class="rating">⭐⭐⭐⭐☆</p>
+                <button onclick="addToCart('Creme Hidratante Lunaire')">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Produtos adicionais seguirão a mesma estrutura... -->
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>Sobre Nós</h2>
+        <p>A Lunaire é uma marca que se inspira na beleza e na elegância das fases da lua, oferecendo produtos que iluminam e destacam a sua beleza natural.</p>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para mais informações sobre nossos produtos.</p>
+        <form>
+            <input type="text" placeholder="Seu nome" required>
+            <input type="email" placeholder="Seu e-mail" required>
+            <textarea placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Lunaire. Todos os direitos reservados.</p>
+    </footer>
+
+    <div id="cart-message" class="cart-message">
+        <p id="cart-notification"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
